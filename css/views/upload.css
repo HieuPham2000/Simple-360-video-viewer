@@ -1,0 +1,72 @@
+@import url('../font.css');
+@import url('../color.css');
+
+#page-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+#page-upload header {
+  display: flex;
+  align-items: center;
+  min-height: 7rem;
+  padding: 1rem 2rem;
+}
+
+#page-upload header .header-logo-wrapper .logo .logo-text {
+  font-weight: bold;
+  font-family: 'NotoSans-Bold';
+  font-size: 4rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+#page-upload header .m-btn {
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+#page-upload header #btnLogin {
+  margin-right: 8px;
+}
+
+/* Main */
+#page-upload main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#page-upload main h1 {
+  font-size: 4rem;
+  font-family: 'NotoSans-Light';
+  font-weight: 300;
+  padding: 24px 48px;
+  margin: 0 0 10px 0;
+}
+
+#page-upload main .important-text {
+  font-family: 'NotoSans-Bold';
+  font-weight: 700;
+}
+
+#page-upload main .sub-title {
+  font-size: 1.8rem;
+  font-family: 'NotoSans-Light';
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+#page-upload main #btnUpload {
+  padding: 24px 48px;
+  font-size: 2rem;
+  border-radius: 1000px;
+}
+
+#page-upload footer {
+  height: 7rem;
+}

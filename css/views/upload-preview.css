@@ -1,0 +1,37 @@
+#page-upload-preview main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-upload-preview .upload-control-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px dashed var(--primary);
+  border-radius: 8px;
+  padding: 20px 40px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+#page-upload-preview .upload-control-wrapper:hover {
+  border-color: var(--hover-area-border);
+  background-color: var(--hover-area-bg);
+}
+
+#page-upload-preview .upload-control-wrapper:hover .upload-text{
+  text-decoration: underline;
+}
+
+#page-upload-preview .upload-control-wrapper .upload-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+#page-upload-preview #previewContainer {
+  width: 600px;
+  height: 400px;
+}

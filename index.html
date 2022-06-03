@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>360 Video World</title>
+  <link rel="icon" href="./assets/images/360-degrees.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/views/index.css">
+</head>
+
+<body>
+  <div id="container"></div>
+  <div class="p-absolute-center" id="title-wrapper">
+    <h1 id="title">360 video world</h1>
+    <button class="m-btn" id="btnTry">Trải nghiệm ngay</button>
+  </div>
+  <div id="credit">Nguồn ảnh: <a href="https://unsplash.com/s/photos/360" target="_blank">unplash.com</a></div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/three.min.js"></script>
+  <script src="./js/panolens.min.js"></script>
+  <script src="./js/views/index.js"></script>
+  <script>
+    const container = document.querySelector('#container');
+    const panorama = new PANOLENS.ImagePanorama('./assets/unsplash1.jpg');
+    let viewer = new PANOLENS.Viewer({ container: container, autoRotate: true, autoRotateSpeed: 0.2, autoRotateActivationDuration: 3000 });
+    // viewer.addUpdateCallback(function () {
+
+    // });
+    viewer.add(panorama);
+  </script>
+</body>
+
+</html>
